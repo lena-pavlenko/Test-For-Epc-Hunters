@@ -10,6 +10,7 @@ const imagemin = require('gulp-imagemin');
 const browsersync = require('browser-sync').create();
 const cleanCSS = require('gulp-clean-css');
 const svgSprite = require('gulp-svg-sprite');
+const uglify = require('gulp-uglify')
 
 const paths = {
   html: {
@@ -99,6 +100,7 @@ function scripts() {
       presets: ['@babel/env']
     }))
     .pipe(concat('main.js'))
+    .pipe(uglify())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.scripts.dest))
     .pipe(browsersync.stream())
