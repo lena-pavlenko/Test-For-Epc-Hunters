@@ -4,7 +4,7 @@ window.onload = () => {
   if (stepSlider && screen.width < 991) {
     const stepSwiper = new Swiper(stepSlider, {
       spaceBetween: 15,
-      slidesPerView: 1,
+      slidesPerView: 'auto',
       navigation: {
         nextEl: '.steps-slider__btn_next',
         prevEl: '.steps-slider__btn_prev',
@@ -27,8 +27,6 @@ window.onload = () => {
 
   // Управление меню
   const handlerMenu = (target) => {
-    console.log(target.parentElement);
-    
     target.parentElement.classList.toggle('open')
     target.closest('.header').classList.toggle('open')
   }

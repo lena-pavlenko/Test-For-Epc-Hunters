@@ -70,6 +70,10 @@ button {
   text-align: center;
   color: #fff;
 
+  @media(max-width: $tablet) {
+    font-size: 60px;
+  }
+
   @media(max-width: $mobile) {
     font-size: 35px;
   }

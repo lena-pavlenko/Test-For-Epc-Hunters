@@ -28,6 +28,14 @@
 
     @media(max-width: $mobile) {
       margin-bottom: 0;
+      padding-right: 15px;
+    }
+  }
+
+  .container {
+
+    @media(max-width: $mobile) {
+      padding-right: 0;
     }
   }
 }
@@ -37,12 +45,8 @@
   min-height: 548px;
 
   @media(max-width: $tablet) {
-    min-height: auto;
+    min-height: initial;
   }
-
-  // @media(max-width: $mobile) {
-  //   margin-right: -20px;
-  // }
 }
 
 .steps-slider {
@@ -59,17 +63,19 @@
     padding-top: 30px;
   }
 
-  &__container {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-  }
-
   &__btns {
+    display: none;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     margin-top: 18px;
+
+    @media(max-width: $tablet) {
+      display: flex;
+    }
+
+    @media(max-width: $mobile) {
+      max-width: calc(100% - 15px);
+    }
   }
 
   &__btn {
@@ -145,7 +151,7 @@
 
     @media(max-width: $mobile) {
       top: -30px;
-      right: -41px;
+      right: -26px;
       width: 62px;
       height: 75px;
     }
@@ -257,7 +263,7 @@
   }
 
   @media(max-width: $mobile) {
-    padding-right: 0;
+    width: calc(100% - 5px);
   }
 
   &__content {
