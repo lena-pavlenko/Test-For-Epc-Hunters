@@ -65,7 +65,7 @@ function fonts() {
 }
 
 function styles() {
-  return gulp.src([paths.styles.src, "./node_modules/bootstrap/dist/css/bootstrap.min.css",])
+  return gulp.src([paths.styles.src,])
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
