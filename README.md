@@ -1,7 +1,7 @@
 # HTML For EPC Hunters
 
 ## Демо
-
+[Посмотреть демо](http://epchunterstest.mydevstand.ru/)
 
 ## Описание
 Верстка страницы по макету Figma
